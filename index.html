@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Parallax Scrolling</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenLite.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/plugins/CSSPlugin.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
+</head>
+<body>
+    <!--  Opening  -->
+    <section class="opening">
+        <div class="open-shape open-square">
+            <div class="o-square"></div>
+        </div>
+        <div class="open-shape open-circle">
+            <div class="o-circle"></div>
+        </div>    
+        <div class="open-shape open-star">
+            <div class="o-star"></div>
+        </div>
+        <div class="open-title">
+            <h1>GEOMETRY PERSON</h1>
+            <p>find your core personality type in shapes!</p>
+        </div>
+    </section>
+    
+    <!--  QA1  -->
+    <section class="QA QA_01">
+        <div class="question-block">
+            <h2>Q1</h2>
+            <h3>If one day you get a gift that can change the rule of the world, which ability will you choose? </h3>
+            <p>Choose the answer appeared in your mind instantly</p>
+            <ul>
+                <li><a href="#">Destroy all humans in the world</a></li>
+                <li><a href="#">Make the war never happened</a></li>
+                <li><a href="#">You won’t get old and live forever</a></li>
+            </ul>
+        </div>
+        <div class="shape-block">
+            <div class="square"></div>
+            <div class="circle"></div>
+            <div class="triangle"></div>
+        </div>
+    </section>
+    
+    <!--  QA2  -->
+    <section class="QA QA_02 hide">
+        <div class="shape-block">
+            <div class="square"></div>
+            <div class="circle"></div>
+            <div class="triangle"></div>
+        </div>
+        <div class="question-block">
+            <h2>Q2</h2>
+            <h3>Imagine you’re almost late, but totally lost at a forked road. Which way do you prefer to go?</h3>
+            <p>Choose the answer appeared in your mind instantly</p>
+            <ul>
+                <li><a href="#">The left one</a></li>
+                <li><a href="#">The right one</a></li>
+                <li><a href="#">Open Google Map</a></li>
+            </ul>
+        </div>    
+    </section>
+    
+    <!--  QA3  -->
+    <section class="QA QA_03 hide">
+        <div class="question-block">
+            <h2>Q3</h2>
+            <h3>When you’re in a exam which you barely prepared for, which is your priority solution?</h3>
+            <p>Choose the answer appeared in your mind instantly</p>
+            <ul>
+                <li><a href="#">Take a nap right away</a></li>
+                <li><a href="#">Fill the answer randomly</a></li>
+                <li><a href="#">All fill the answer "C"</a></li>
+            </ul>
+        </div>
+        <div class="shape-block">
+            <div class="square"></div>
+            <div class="circle"></div>
+            <div class="triangle"></div>
+        </div>    
+    </section>
+    
+    <!--  Caculating  -->
+    <section class="caculating hide">
+        <div class="c-triangle">
+            <div class="caculat-text">
+                <h2>ALL DONE!</h2>
+                <p>Keep scrolling to show the result</p>
+            </div>
+            <div class="caculat-shape">
+                <div class="triangle"></div>
+            </div>
+        </div>
+        <div class="c-rectangle">
+            <div class="caculat-text">
+                <h2>NOW CACULATING</h2>
+                <p>Keep scrolling to show the result</p>
+           </div>
+            <div class="caculat-shape">
+                <div class="square"></div>
+            </div>   
+        </div>
+        <div class="c-circular">
+            <div class="caculat-text">
+                <h2>YOU ARE…</h2>
+                <p>Keep scrolling to show the result</p>
+           </div>
+            <div class="caculat-shape">
+                <div class="circle"></div>
+            </div>
+        </div>
+    </section>
+    
+    <!--  result-triangle  -->
+    <section class="result r-triangle"></section>
+    
+    <!--  result-rectangle  -->
+    <section class="result r-rectangle"></section>
+    
+    <!--  result-circular  -->
+    <section class="result r-circular"></section>
+    
+<script src="js/all.js"></script>   
+</body>
+</html>

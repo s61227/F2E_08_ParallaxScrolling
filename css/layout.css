@@ -1,0 +1,319 @@
+/* ====== CSS Reset ====== */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Default css ========================  */
+html,body,section{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+.hide{
+    display: none !important; 
+}
+.circle{
+    background-color: #000;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 150px solid #fff;
+}
+.square{
+    background-color: #FF3C82;
+    width: 200px;
+    height: 200px;
+}
+
+/* Opening ========================  */
+.opening {
+	background-color: #1469FF;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.opening h1{
+	font-size: 64px;
+    font-weight: bold;
+}
+.opening p{
+    font-size: 24px;
+    line-height: 36px;
+}
+.opening>div{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.open-shape .o-square{
+    background-color: #000;
+    width: 360px;
+    height: 360px;
+}
+.open-shape .o-circle{
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background-color: #0027C8;
+}
+.open-star{height: 300px;}
+.open-shape .o-star{
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 250px solid #FF3C82;;
+    position: relative;
+}
+.open-shape .o-star:after{
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 250px solid #FF3C82;;
+    position: absolute;
+    content: "";
+    top: 50px;
+    left: -150px;
+}
+
+/* QA ========================  */
+/* 共同 */
+.QA{
+    display: flex;
+}
+.question-block {
+    width: 60%;
+    padding: 40px 100px 0 100px;
+}
+.question-block h2{
+    font-size: 64px;
+    font-weight: bold;
+}
+.question-block h3{
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.question-block p{
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.question-block ul li{
+   margin-bottom: 16px;
+}
+.question-block ul li a{ 
+    font-size: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 36px;
+    text-decoration: none;
+    display: block;
+    padding: 10px 40px;
+    border-radius: 30.5px;
+    border: 1px solid #fff;
+}
+.question-block ul li a:hover{
+    background-color: #fff;
+    color: #1469FF;
+}
+.shape-block {
+    width: 40%;
+    position: relative;
+    overflow: hidden;
+}
+.shape-block div{
+    display: inline-block;
+    position: absolute;
+}
+
+.QA1_bg{ background-color: #1469FF;}
+/* QA_01 */
+.QA_01 .question-block h2{
+    color: #FF3C82;
+}
+.QA_01 .question-block h3{
+    color: #FFFFFF;
+}
+.QA_01 .question-block p{
+    color: #0027C8;
+}
+.QA_01 .question-block {
+    background-color: #1469FF;
+}
+.QA_01 .shape-block { 
+    background-color: #0027C8;
+}
+.QA_01 .shape-block .square{
+    background-color: #FF3C82;
+    transform: scale(1);
+}
+.QA_01 .shape-block .circle{
+    background-color: #000;
+    transform: scale(2);
+}
+.QA_01 .shape-block .triangle{
+    transform: scale(1);
+}
+/* QA_02 */
+.QA_02 .question-block h2{
+    color: #FF3C82;
+}
+.QA_02 .question-block h3{
+    color: #FFFFFF;
+}
+.QA_02 .question-block p{
+    color: #1469FF;
+}
+.QA_02 .question-block {
+    background-color: #0027C8;
+}
+.QA_02 .shape-block {
+    background-color: #FF3C82;
+}
+.QA_02 .shape-block .square{
+    background-color: #1469FF;
+    transform: scale(1.2);
+}
+.QA_02 .shape-block .circle{
+    background-color: #000;
+    transform: scale(1);
+}
+.QA_02 .shape-block .triangle{
+    transform: scale(2);
+}
+/* QA_03 */
+.QA_03 .question-block h2{
+    color: #fff;
+}
+.QA_03 .question-block h3{
+    color: #000;
+}
+.QA_03 .question-block p{
+    color: #000;
+}
+.QA_03 .question-block {
+    background-color: #FF3C82;
+}
+.QA_03 .shape-block {
+    background-color: #1469FF;
+}
+.QA_03 .shape-block .square{
+    background-color: #0027C8;
+    transform: scale(1.2);
+}
+.QA_03 .shape-block .circle{
+    background-color: #fff;
+    transform: scale(1.3);
+}
+.QA_03 .shape-block .triangle{
+    border-bottom: 150px solid #000;
+    transform: scale(1.2);
+}
+
+
+/* Caculating ========================  */
+.caculating {
+	overflow: auto;
+}
+.caculating>div{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.caculating div>div{
+    position: absolute;
+}
+.caculat-text{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    text-align: center;
+    z-index: 2;
+}
+.caculat-text h2{
+    font-weight: bold;
+    font-size: 64px;
+    color: #FFFFFF;
+}
+.caculat-text p{
+    font-size: 24px;
+    color: #FFFFFF;
+    line-height: 36px;
+}
+.caculat-shape{
+    z-index: 1;
+}
+
+.caculating .c-triangle{
+    background-color: #1469FF;
+}
+.caculating .c-rectangle{
+    background-color: #0027C8;
+}
+.caculating .c-circular{
+    background-color: #FF3C82;
+}
+
+/* result ========================  */
+/* 共同 */
+
+/* r-triangle */
+/* r-rectangle */
+/* r-circular */
